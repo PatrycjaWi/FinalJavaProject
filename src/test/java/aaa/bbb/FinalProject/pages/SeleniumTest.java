@@ -22,7 +22,7 @@ public class SeleniumTest extends BasePage {
 
 	//a[ @class='dropdown-toggle'] 
 	
-	public void ClickOnSelenium()   {
+	public void ClickOnSelenium() {
 		
 		//WebElement Selenium  = driver.findElement(SeleniumBy);
 		
