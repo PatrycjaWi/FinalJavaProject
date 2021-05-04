@@ -16,16 +16,14 @@ import aaa.bbb.FinalProject.utils.ElementsAction;
 
 public class TestCase1 extends BaseTest {
 
-	
-	SeleniumTest SeleniumTest = new SeleniumTest(super.driver);
 	//XML that initializes all tests
-
-
 
 	@Test
 	public void f() {
+		SeleniumTest seleniumTest = new SeleniumTest(super.driver);
+		System.out.println("666");
 
-		SeleniumTest.selectTopMenu("Selenium", "Table Demo");
+		seleniumTest.selectTopMenu("Selenium", "Table Demo");
 	}
 
 

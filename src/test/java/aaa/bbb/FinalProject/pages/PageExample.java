@@ -17,6 +17,7 @@ public class PageExample extends BasePage{
 		WebElement searchField = driver.findElement(searchFieldLocator);
 		searchField.sendKeys(value);
 		
+		
 	}
 	
 }

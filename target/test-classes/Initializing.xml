@@ -3,8 +3,12 @@
 <suite parallel="classes"  thread-count = "7" name="Suite">
   <test name="Test">
     <classes>
-      <class name="aaa.bbb.FinalProject.tests.TestCase1"/>
-      <class name="aaa.bbb.FinalProject.tests.TestCase2"/>
+      <class name="aaa.bbb.FinalProject.tests.TestCase1"/>     
+    </classes>
+  </test> <!-- Test -->
+   <test name="Test2">
+    <classes>
+       <class name="aaa.bbb.FinalProject.tests.TestCase2"/>   
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

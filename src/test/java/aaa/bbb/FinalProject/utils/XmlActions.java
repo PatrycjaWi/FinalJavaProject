@@ -6,6 +6,7 @@ import javax.swing.text.Document;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
 public class XmlActions {
@@ -27,5 +28,15 @@ public class XmlActions {
 			return null;
 		}
 	}
+	/*public static String getXmlValue(Document document, String xpath) {
+		try {
+			XPath xpath =XPathFactory.newInstance().newXPath();
+			return xpath.compile(xpath).evaluate(document);
+		}
+		catch(XPathExpressionException e) {
+			System.out.println(e.getMessage());
+			return null;
+		}
+	}*/
 
 }
