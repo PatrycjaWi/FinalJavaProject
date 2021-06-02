@@ -9,6 +9,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import aaa.bbb.FinalProject.utils.Reporter;
+
 public class BaseTest {
 
 	public WebDriver driver;
@@ -25,7 +27,6 @@ public class BaseTest {
 
 
 		driver.get("http://demo.guru99.com/");
-
 
 	}
 

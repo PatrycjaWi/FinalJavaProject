@@ -1,16 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite parallel="classes"  thread-count = "7" name="Suite">
-  <test name="Test">
-    <classes>
-      <class name="aaa.bbb.FinalProject.tests.TestCase1"/>     
-    </classes>
-  </test> <!-- Test -->
-   <test name="Test2">
-    <classes>
-       <class name="aaa.bbb.FinalProject.tests.TestCase2"/>   
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<suite parallel="classes" thread-count="7" name="Suite">
+	<groups>
+		<run>
+			<include name="groupNr1" />
+		</run>
+	</groups>
+	<!-- you need to switch group to run only 2 test :'groupNr2' -->
+	<test name="Test1">
+		<classes>
+			<class name="aaa.bbb.FinalProject.tests.TestLogin" />
+			<parameter name="menu" value="Selenium" />
+			<parameter name="subMenu" value="Login" />
+			<parameter name="imagePath"
+				value="C:\\Users" />
+		</classes>
+	</test> <!-- Test -->
 
+	<test name="Test2">
+		<classes>
+			<class name="aaa.bbb.FinalProject.tests.TestDemoPage" />
+			<parameter name="menu" value="Selenium" />
+			<parameter name="subMenu" value="Guru99 Demo Page" />
+			<parameter name="mail" value="pati@gmail.com" />
+			<parameter name="imagePath"
+				value="C:\\Users" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Test3">
+
+		<classes>
+			<class name="aaa.bbb.FinalProject.tests.TestTable" />
+			<parameter name="menu" value="Selenium" />
+			<parameter name="subMenu" value="Table Demo" />
+			<parameter name="value" value="222" />
+			<parameter name="imagePath" value="C:\\Users" />
+			<parameter name="expectedNumber" value="12" />
+			<parameter name="counter" value="12" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
 
